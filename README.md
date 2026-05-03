@@ -1,4 +1,13 @@
-export default {
+"$schema" = "./node_modules/wrangler/config-schema.json"
+name = "my-worker-dev"
+
+[vars]
+API_HOST = "example.com"
+API_ACCOUNT_ID = "example_user"
+
+  [vars.SERVICE_X_DATA]
+  URL = "service-x-api.dev.example"
+  MY_ID = 123export default {
   async fetch(request, env, ctx) {
     return new Response(`API host: ${env.API_HOST}`);
   },
