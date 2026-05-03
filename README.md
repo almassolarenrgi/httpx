@@ -1,4 +1,8 @@
-<p align="center">
+export default {
+  async fetch(request, env, ctx) {
+    return new Response(`API host: ${env.API_HOST}`);
+  },
+};<p align="center">
   <a href="https://www.python-httpx.org/"><img width="350" height="208" src="https://raw.githubusercontent.com/encode/httpx/master/docs/img/butterfly.png" alt='HTTPX'></a>
 </p>
 
