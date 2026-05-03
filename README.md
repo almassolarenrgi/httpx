@@ -3,7 +3,18 @@ export default {
     return new Response(`API host: ${env.API_HOST}`);
   },
 };<p align="center">
-  <a href="https://www.python-httpx.org/"><img width="350" height="208" src="https://raw.githubusercontent.com/encode/httpx/master/docs/img/butterfly.png" alt='HTTPX'></a>
+  <a href="https://www.python-httpx.org/"><img width="350" height="208" src="https://raw.githubusercontent.com/encode/httpx/{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "my-worker-dev",
+  "vars": {
+    "API_HOST": "example.com",
+    "API_ACCOUNT_ID": "example_user",
+    "SERVICE_X_DATA": {
+      "URL": "service-x-api.dev.example",
+      "MY_ID": 123
+    }
+  }
+}master/docs/img/butterfly.png" alt='HTTPX'></a>
 </p>
 
 <p align="center"><strong>HTTPX</strong> <em>- A next-generation HTTP client for Python.</em></p>
